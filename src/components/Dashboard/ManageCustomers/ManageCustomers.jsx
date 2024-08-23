@@ -32,7 +32,7 @@ const ManageCustomers = () => {
       await deleteUser(id);
       setCustomers(customers.filter((customer) => customer.id !== id));
     } catch (err) {
-      setError("Failed to delete customer");
+      setError("Failed to delete customer. User has active orders");
     }
   };
 
@@ -41,12 +41,6 @@ const ManageCustomers = () => {
       <AdminSidebar />
       <div className="manage-customers">
         <h2 className="manage-customers__title">Manage Customers</h2>
-        <Link
-          to="/admin/customers/new"
-          className="manage-customers__add-button"
-        >
-          Add New Customer
-        </Link>
         {loading ? (
           <p className="manage-customers__loading">Loading...</p>
         ) : error ? (
