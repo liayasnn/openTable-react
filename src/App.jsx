@@ -22,7 +22,6 @@ import AdminDashboard from "./pages/AdminDashboard/AdminDashboard.jsx";
 import AdminLogin from "./components/Forms/AdminLogin/AdminLogin.jsx";
 import ManageCustomers from "./components/Dashboard/ManageCustomers/ManageCustomers.jsx";
 import EditCustomer from "./components/Dashboard/ManageCustomers/EditCustomer.jsx";
-import AddCustomer from "./components/Dashboard/ManageCustomers/AddCustomer.jsx";
 import ManageProducts from "./components/Dashboard/ManageProducts/ManageProducts.jsx";
 import EditProduct from "./components/Dashboard/ManageProducts/EditProduct.jsx";
 import AddProduct from "./components/Dashboard/ManageProducts/AddProduct.jsx";
@@ -76,14 +75,6 @@ const App = () => {
             <Route
               path="/admin/customers/edit/:id"
               element={<EditCustomer />}
-            />
-            <Route
-              path="/admin/customers/new"
-              element={
-                <PrivateRoute>
-                  <AddCustomer />
-                </PrivateRoute>
-              }
             />
             <Route
               path="/admin/products"
