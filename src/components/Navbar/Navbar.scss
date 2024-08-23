@@ -1,0 +1,83 @@
+@use "../../styles/variables" as *;
+
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: $colour-background-primary;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  &--active {
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    &-button {
+      background: transparent;
+      border: none;
+      &-image {
+        height: 3vh;
+        width: auto;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    &-item {
+      padding: 21px 0;
+      text-decoration: none;
+      font-size: small;
+      border-bottom: 1px solid black;
+      color: $colour-font-general;
+      width: 100%;
+      text-align: right;
+      &:hover {
+        text-decoration: underline;
+        color: $colour-primary;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .navbar {
+    &__nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      gap: 50px;
+
+      &-item {
+        text-align: center;
+        white-space: nowrap;
+        font-size: $font-size-smallest;
+        border: none;
+        padding: 0;
+        width: fit-content;
+        border-style: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: $large-desktop-breakpoint) {
+  .navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    &__container {
+      width: 70vw;
+    }
+  }
+}

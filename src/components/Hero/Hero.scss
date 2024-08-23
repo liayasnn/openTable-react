@@ -1,0 +1,29 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem;
+  margin-bottom: 10%;
+  &__content {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 769px) {
+    .hero {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20%;
+      &__content {
+        font-size: 4rem;
+        display: flex;
+        justify-content: flex-end;
+        text-align: end;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    width: 80%;
+  }
+}

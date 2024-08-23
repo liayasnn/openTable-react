@@ -1,0 +1,97 @@
+@use "../../styles/variables" as *;
+.item {
+  &__title {
+    margin-top: 10%;
+    font-size: $font-size-smaller;
+    text-align: center;
+    width: 80%;
+  }
+  &__subtitle {
+    font-size: $font-size-smallest;
+    text-align: center;
+    width: 80%;
+    margin-top: 5%;
+  }
+  &__image {
+    width: 20rem;
+    z-index: 0;
+    position: fixed;
+    bottom: 20%;
+  }
+  &__image2 {
+    z-index: -1;
+    position: fixed;
+    bottom: 10%;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: $tablet-breakpoint) {
+  .item {
+    &__title {
+      margin-top: 1rem;
+      font-size: $font-size-medium;
+    }
+    &__subtitle {
+      font-size: $font-size-small;
+    }
+    &__image {
+      width: 30rem;
+      z-index: 0;
+      position: fixed;
+      bottom: 20%;
+    }
+    &__image2 {
+      z-index: -1;
+      position: fixed;
+      bottom: 0%;
+      width: 35rem;
+    }
+  }
+}
+@media screen and (min-width: $desktop-breakpoint) {
+  .item {
+    &__title {
+      margin-top: 1rem;
+      font-size: $font-size-medium;
+    }
+    &__subtitle {
+      font-size: $font-size-small;
+    }
+    &__image {
+      width: 30rem;
+      z-index: 0;
+      position: fixed;
+      bottom: 15%;
+    }
+    &__image2 {
+      z-index: -1;
+      position: fixed;
+      bottom: 0%;
+      width: 30rem;
+    }
+  }
+}
+
+@media screen and (min-width: $extra-large-desktop-breakpoint) {
+  .item {
+    &__title {
+      margin-top: 1rem;
+      font-size: $font-size-large;
+    }
+    &__subtitle {
+      font-size: $font-size-small;
+    }
+    &__image {
+      width: 30rem;
+      z-index: 0;
+      position: fixed;
+      bottom: 15%;
+    }
+    &__image2 {
+      z-index: -1;
+      position: fixed;
+      bottom: 0%;
+      width: 35rem;
+    }
+  }
+}

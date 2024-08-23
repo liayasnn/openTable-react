@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+* {
+  font-family: $font-general, sans-serif;
+  font-size: $font-size-default;
+  color: $colour-font-general;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-header, sans-serif;
+}

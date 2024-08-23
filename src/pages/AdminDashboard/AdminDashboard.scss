@@ -1,0 +1,89 @@
+@use "../../styles/variables" as *;
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10%;
+  width: 80vw;
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+
+    &__item {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &__link {
+        display: block;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .admin-dashboard {
+    padding: 24px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__list__item__link {
+      font-size: 20px;
+      padding: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .admin-dashboard {
+    width: 60vw;
+    padding: 32px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__list__item__link {
+      font-size: 22px;
+      padding: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: $large-desktop-breakpoint) {
+  .admin-dashboard {
+    width: 50vw;
+    &__title {
+      font-size: 36px;
+    }
+
+    &__list__item__link {
+      font-size: 24px;
+      padding: 18px;
+    }
+  }
+}

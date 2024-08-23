@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// breakpoints
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+$large-desktop-breakpoint: 1440px;
+$extra-large-desktop-breakpoint: 1920px;
+
+// Colours
+$colour-font-general: #25283d;
+$colour-primary: #f7630d;
+
+$colour-font-paragraph: #6f6682;
+$colour-font-label: #817a8d;
+
+$colour-background-primary: white;
+$colour-background-secondary: grey;
+
+// Fonts
+$font-header: "Raleway", sans-serif;
+$font-general: "Lato", sans-serif;
+
+// Standard font size
+$font-size-tiny: 0.625rem;
+$font-size-default: 1rem;
+$font-size-smallest: 1.125rem;
+$font-size-smaller: 1.25rem;
+$font-size-small: 1.5rem;
+$font-size-medium: 2rem;
+$font-size-large: 2.5rem;
+$font-size-larger: 3rem;
+$font-size-largest: 4rem;

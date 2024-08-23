@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+.cart-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 2s ease-in;
+  transform: translateX(0);
+  z-index: 1000;
+  overflow-y: scroll;
+  &__close {
+    height: 3vh;
+    width: 100vw;
+    width: auto;
+    position: fixed;
+    right: 0%;
+    margin: 10%;
+    cursor: pointer;
+    color: black;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .cart-popup {
+    width: 60vw;
+  }
+}

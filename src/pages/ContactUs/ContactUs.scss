@@ -1,0 +1,103 @@
+@use "../../styles/variables" as *;
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+
+  width: 80vw;
+  margin: 10% auto;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    &-group {
+      margin-bottom: 15px;
+    }
+
+    &__label {
+      display: block;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    &__input,
+    &__textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    &__textarea {
+      height: 80px;
+      resize: vertical;
+    }
+
+    &__checkbox {
+      margin-right: 10px;
+    }
+
+    &__submit-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  &__success-popup {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    animation: fadeOut 5s forwards;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .contact-us {
+    width: 50vw;
+  }
+}

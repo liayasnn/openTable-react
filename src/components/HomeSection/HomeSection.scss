@@ -1,0 +1,25 @@
+.homeSection {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.itemSection {
+  scroll-snap-align: start;
+  transition: 0.5s ease-out;
+  height: 80vh;
+  width: 100%;
+}
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
