@@ -5,6 +5,11 @@ const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
 
+  const generateGuestId = () => {
+    const guestId = `guest_${Math.random().toString(36).substring(2, 15)}`;
+    return guestId;
+  };
+
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
     const savedUser = localStorage.getItem("user");
@@ -39,10 +44,6 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem("user");
   };
 
-  const generateGuestId = () => {
-    const guestId = `guest_${Math.random().toString(36).substring(2, 15)}`;
-    return guestId;
-  };
 
   const registerUser = async (userData) => {
     try {
