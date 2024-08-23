@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "${API_BASE_URL}api/reviews";
+const API_BASE_URL = "https://opentableapi-67f2ff1a9563.herokuapp.com/api/reviews";
 
 // Get reviews by product ID
 export const getReviewsByProductId = async (productId) => {

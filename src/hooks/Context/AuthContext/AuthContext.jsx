@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
-import API_BASE_URL from "../../apiConfig/apiConfig";
+
 const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
@@ -47,7 +47,7 @@ export const AuthProvider = ({ children }) => {
   const registerUser = async (userData) => {
     try {
       const response = await axios.post(
-        '${API_BASE_URL}/api/users',
+        'https://opentableapi-67f2ff1a9563.herokuapp.com/api/users',
         userData
       );
       login(response.data);
@@ -61,7 +61,7 @@ export const AuthProvider = ({ children }) => {
   const loginUser = async (email, password) => {
     try {
       const response = await axios.post(
-        "${API_BASE_URL}/api/users/login",
+        "https://opentableapi-67f2ff1a9563.herokuapp.com/api/users/login",
         { email, password }
       );
       login(response.data);

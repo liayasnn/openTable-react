@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/users";
+const API_URL = "https://opentableapi-67f2ff1a9563.herokuapp.com/api/users";
 
 export const getAllUsers = async () => {
   try {

@@ -1,7 +1,6 @@
 import axios from "axios";
-import API_BASE_URL from "../apiConfig/apiConfig";
 
-const API_URL = '${API_BASE_URL}/api/products';
+const API_URL = 'https://opentableapi-67f2ff1a9563.herokuapp.com/api/products';
 
 export const getAllProducts = async () => {
   try {

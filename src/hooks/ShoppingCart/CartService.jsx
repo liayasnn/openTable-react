@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/shopping-cart";
+const API_URL = "https://opentableapi-67f2ff1a9563.herokuapp.com/api/shopping-cart";
 
 //get cart by user
 export const fetchCart = async (userId, guestId) => {
