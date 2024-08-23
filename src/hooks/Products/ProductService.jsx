@@ -1,6 +1,7 @@
 import axios from "axios";
+import API_BASE_URL from "../apiConfig/apiConfig";
 
-const API_URL = "http://localhost:8080/api/products";
+const API_URL = '${API_BASE_URL}/api/products';
 
 export const getAllProducts = async () => {
   try {

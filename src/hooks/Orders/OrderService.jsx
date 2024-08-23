@@ -1,6 +1,7 @@
 import axios from "axios";
+import API_BASE_URL from "../apiConfig/apiConfig";
 
-const API_URL = "http://localhost:8080/api/orders";
+const API_URL = '${API_BASE_URL}/api/orders';
 //place order after checkout
 export const placeOrder = async ({
   userId,
